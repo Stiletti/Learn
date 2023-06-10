@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{B5C36D0B-433C-EA1E-35B6-F0974301064C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Learning",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
