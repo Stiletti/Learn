@@ -18,6 +18,7 @@ public:
 	// Sets default values for this character's properties
 	ALearnCharacter();
 
+	// Components
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Components)
 	USpringArmComponent* SpringArmComponent;
 
@@ -27,6 +28,9 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=SpawnClass)
+	TSubclassOf<AActor> ProjectileClass;
 
 public:	
 	// Called every frame
@@ -38,4 +42,6 @@ public:
 	// Character movement
 	void MoveForward(float Value);
 	void MoveRight(float Value);
+
+	void ProjectileAttack();
 };
